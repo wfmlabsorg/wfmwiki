@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Migration-Source on WFM Labs Knowledge Wiki</title><link>https://wiki.wfmlabs.com/tags/migration-source/</link><description>Recent content in Migration-Source on WFM Labs Knowledge Wiki</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 04 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://wiki.wfmlabs.com/tags/migration-source/index.xml" rel="self" type="application/rss+xml"/><item><title>WFM Labs MediaWiki Wiki (Pre-Migration Snapshot)</title><link>https://wiki.wfmlabs.com/sources/src-wfmlabs-mediawiki-2026-05-04/</link><pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate><guid>https://wiki.wfmlabs.com/sources/src-wfmlabs-mediawiki-2026-05-04/</guid><description>&lt;h1 id="wfm-labs-mediawiki-wiki-pre-migration-snapshot">WFM Labs MediaWiki Wiki (Pre-Migration Snapshot)&lt;/h1>
+&lt;p>Bibliographic snapshot of the original WFM Labs MediaWiki at &lt;a href="https://wiki.wfmlabs.org">https://wiki.wfmlabs.org&lt;/a> as of 2026-05-04. This source page anchors all content migrated into the new markdown-native wiki.&lt;/p>
+&lt;h2 id="bibliographic-metadata">Bibliographic Metadata&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Field&lt;/th>
+ &lt;th>Value&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>URL&lt;/td>
+ &lt;td>&lt;a href="https://wiki.wfmlabs.org">https://wiki.wfmlabs.org&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Export date&lt;/td>
+ &lt;td>2026-05-04&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Format&lt;/td>
+ &lt;td>MediaWiki XML export via Special:Export&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Total pages exported&lt;/td>
+ &lt;td>124&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Content pages migrated&lt;/td>
+ &lt;td>27&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Pages routed to Hugo site&lt;/td>
+ &lt;td>6 (Main Page, Privacy Policy, Terms, CoC, About, plus a Wiki:Privacy duplicate)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Pages pruned&lt;/td>
+ &lt;td>2 (OAuth Test Success, Token Test — test artifacts)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Pages requiring manual port&lt;/td>
+ &lt;td>1 (Event Management — pandoc choke on &lt;code>{{table}}&lt;/code> template wrapper)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Original author&lt;/td>
+ &lt;td>Ted Lango (User:Tlango)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Active period&lt;/td>
+ &lt;td>2022-11 to 2025-08 (revision date range)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Local archive&lt;/td>
+ &lt;td>&lt;code>raw/mediawiki-export/wfmlabs-mediawiki-2026-05-04.xml&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Local images&lt;/td>
+ &lt;td>&lt;code>raw/assets/mediawiki/&lt;/code> &lt;em>(populated separately by image migration tool)&lt;/em>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="pages-migrated-from-this-source">Pages Migrated from This Source&lt;/h2>
+&lt;h3 id="synthesis-12--teds-pov--wfm-labs-frameworks">Synthesis (12) — Ted&amp;rsquo;s POV / WFM Labs frameworks&lt;/h3>
+&lt;ul>
+&lt;li>
+
+
+
+
+
+
+
+&lt;a href="https://wiki.wfmlabs.com/synthesis/future-wfm-operating-standard/" class="wikilink wikilink-exists" data-wikilink="synthesis/future-wfm-operating-standard">Future WFM Operating Standard&lt;/a>
+ &lt;em>(thesis hub)&lt;/em>&lt;/li>
+&lt;li>
+
+
+
+
+
+
+
+&lt;a href="https://wiki.wfmlabs.com/synthesis/workforce-management-standard-introduction/" class="wikilink wikilink-exists" data-wikilink="synthesis/workforce-management-standard-introduction">Workforce Management Standard Introduction&lt;/a>
+&lt;/li>
+&lt;li>
+
+
+
+
+
+
+
+&lt;a href="https://wiki.wfmlabs.com/synthesis/changes-to-the-future-of-workforce-management/" class="wikilink wikilink-exists" data-wikilink="synthesis/changes-to-the-future-of-workforce-management">Changes to the Future of Workforce Management&lt;/a>
+&lt;/li>
+&lt;li>
+
+
+
+
+
+
+
+&lt;a href="https://wiki.wfmlabs.com/synthesis/wfm-goals/" class="wikilink wikilink-exists" data-wikilink="synthesis/wfm-goals">WFM Goals&lt;/a>
+&lt;/li>
+&lt;li>
+
+
+
+
+
+
+
+&lt;a href="https://wiki.wfmlabs.com/synthesis/wfm-roles/" class="wikilink wikilink-exists" data-wikilink="synthesis/wfm-roles">WFM Roles&lt;/a>
+&lt;/li>
+&lt;li>
+
+
+
+
+
+
+
+&lt;a href="https://wiki.wfmlabs.com/synthesis/wfm-processes/" class="wikilink wikilink-exists" data-wikilink="synthesis/wfm-processes">WFM Processes&lt;/a>
+&lt;/li>
+&lt;li>
+
+
+
+
+
+
+
+&lt;a href="https://wiki.wfmlabs.com/synthesis/interpersonal-relationships/" class="wikilink wikilink-exists" data-wikilink="synthesis/interpersonal-relationships">Interpersonal Relationships&lt;/a>
+&lt;/li>
+&lt;li>
+
+
+
+
+
+
+
+&lt;a href="https://wiki.wfmlabs.com/synthesis/technology/" class="wikilink wikilink-exists" data-wikilink="synthesis/technology">Technology&lt;/a>
+&lt;/li>
+&lt;li>
+
+
+
+
+
+
+
+&lt;a href="https://wiki.wfmlabs.com/synthesis/wfm-assessment/" class="wikilink wikilink-exists" data-wikilink="synthesis/wfm-assessment">WFM Assessment&lt;/a>
+&lt;/li>
+&lt;li>
+
+
+
+
+
+
+
+&lt;a href="https://wiki.wfmlabs.com/synthesis/wfm-labs-erlang-o/" class="wikilink wikilink-exists" data-wikilink="synthesis/wfm-labs-erlang-o">WFM Labs Erlang-O™&lt;/a>
+&lt;/li>
+&lt;li>
+
+
+
+
+
+
+
+&lt;a href="https://wiki.wfmlabs.com/synthesis/wfm-labs-maturity-model/" class="wikilink wikilink-exists" data-wikilink="synthesis/wfm-labs-maturity-model">WFM Labs Maturity Model™&lt;/a>
+&lt;/li>
+&lt;li>
+
+
+
+
+
+
+
+&lt;a href="https://wiki.wfmlabs.com/synthesis/wfm-labs-risk-score/" class="wikilink wikilink-exists" data-wikilink="synthesis/wfm-labs-risk-score">WFM Labs Risk Score™&lt;/a>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="calculators-9">Calculators (9)&lt;/h3>
+&lt;ul>
+&lt;li>
+
+
+
+
+
+
+
+&lt;a href="https://wiki.wfmlabs.com/calculators/annual-attrition/" class="wikilink wikilink-exists" data-wikilink="calculators/annual-attrition">Annual Attrition&lt;/a>
+&lt;/li>
+&lt;li>
+
+
+
+
+
+
+
+&lt;a href="https://wiki.wfmlabs.com/calculators/annual-salary/" class="wikilink wikilink-exists" data-wikilink="calculators/annual-salary">Annual Salary&lt;/a>
+&lt;/li>
+&lt;li>
+
+
+
+
+
+
+
+&lt;a href="https://wiki.wfmlabs.com/calculators/demand-calculation/" class="wikilink wikilink-exists" data-wikilink="calculators/demand-calculation">Demand Calculation&lt;/a>
+&lt;/li>
+&lt;li>
+
+
+
+
+
+
+
+&lt;a href="https://wiki.wfmlabs.com/calculators/dynamic-calculators/" class="wikilink wikilink-exists" data-wikilink="calculators/dynamic-calculators">Dynamic Calculators&lt;/a>
+ &lt;em>(overview)&lt;/em>&lt;/li>
+&lt;li>
+
+
+
+
+
+
+
+&lt;a href="https://wiki.wfmlabs.com/calculators/length-of-training/" class="wikilink wikilink-exists" data-wikilink="calculators/length-of-training">Length of Training&lt;/a>
+&lt;/li>
+&lt;li>
+
+
+
+
+
+
+
+&lt;a href="https://wiki.wfmlabs.com/calculators/onboarding-costs/" class="wikilink wikilink-exists" data-wikilink="calculators/onboarding-costs">Onboarding Costs&lt;/a>
+&lt;/li>
+&lt;li>
+
+
+
+
+
+
+
+&lt;a href="https://wiki.wfmlabs.com/calculators/power-of-one/" class="wikilink wikilink-exists" data-wikilink="calculators/power-of-one">Power of One&lt;/a>
+&lt;/li>
+&lt;li>
+
+
+
+
+
+
+
+&lt;a href="https://wiki.wfmlabs.com/calculators/speed-to-proficiency-curve/" class="wikilink wikilink-exists" data-wikilink="calculators/speed-to-proficiency-curve">Speed to Proficiency Curve&lt;/a>
+&lt;/li>
+&lt;li>
+
+
+
+
+
+
+
+&lt;a href="https://wiki.wfmlabs.com/calculators/training-attrition/" class="wikilink wikilink-exists" data-wikilink="calculators/training-attrition">Training Attrition&lt;/a>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="methods-5">Methods (5)&lt;/h3>
+&lt;ul>
+&lt;li>
+
+
+
+
+
+
+
+&lt;a href="https://wiki.wfmlabs.com/methods/multi-objective-optimization-in-contact-center/" class="wikilink wikilink-exists" data-wikilink="methods/multi-objective-optimization-in-contact-center">Multi-Objective Optimization in Contact Center&lt;/a>
+&lt;/li>
+&lt;li>
+
+
+
+
+
+
+
+&lt;a href="https://wiki.wfmlabs.com/methods/next-generation-routing/" class="wikilink wikilink-exists" data-wikilink="methods/next-generation-routing">Next Generation Routing&lt;/a>
+&lt;/li>
+&lt;li>
+
+
+
+
+
+
+
+&lt;a href="https://wiki.wfmlabs.com/methods/real-time-cause-and-effect-fishbone/" class="wikilink wikilink-exists" data-wikilink="methods/real-time-cause-and-effect-fishbone">Real-Time Cause and Effect Fishbone&lt;/a>
+&lt;/li>
+&lt;li>
+
+
+
+
+
+
+
+&lt;a href="https://wiki.wfmlabs.com/methods/resource-optimization-center-roc/" class="wikilink wikilink-exists" data-wikilink="methods/resource-optimization-center-roc">Resource Optimization Center (ROC)&lt;/a>
+&lt;/li>
+&lt;li>
+
+
+
+
+
+
+
+&lt;a href="https://wiki.wfmlabs.com/methods/level-1-process-templates/" class="wikilink wikilink-exists" data-wikilink="methods/level-1-process-templates">Level 1 Process Templates&lt;/a>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="comparisons-1">Comparisons (1)&lt;/h3>
+&lt;ul>
+&lt;li>
+
+
+
+
+
+
+
+&lt;a href="https://wiki.wfmlabs.com/comparisons/discrete-event-vs-monte-carlo-simulation-models/" class="wikilink wikilink-exists" data-wikilink="comparisons/discrete-event-vs-monte-carlo-simulation-models">Discrete-Event vs. Monte Carlo Simulation Models&lt;/a>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="migration-notes">Migration Notes&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Conversion tool:&lt;/strong> &lt;code>wfmwiki-mediawiki-import.ts&lt;/code> (uses pandoc 3.1 &lt;code>mediawiki → gfm&lt;/code>)&lt;/li>
+&lt;li>&lt;strong>Heuristic type assignment:&lt;/strong> ~95% accurate on first pass. Manual override applied to 2 pages (&lt;code>interpersonal-relationships&lt;/code>, &lt;code>technology&lt;/code>) to upgrade from &lt;code>concept&lt;/code> → &lt;code>synthesis&lt;/code> based on context as sub-pages of the WFM Operating Standard thesis stack.&lt;/li>
+&lt;li>&lt;strong>Image references:&lt;/strong> all migrated pages reference &lt;code>/img/mediawiki/&amp;lt;filename&amp;gt;&lt;/code>. Image files migrated separately (not bundled in XML export).&lt;/li>
+&lt;li>&lt;strong>Wikilinks:&lt;/strong> internal MediaWiki links converted to Obsidian-style double-bracket wikilink syntax during import. Cross-references preserved.&lt;/li>
+&lt;li>&lt;strong>Schema battle-test:&lt;/strong> All 27 pages pass &lt;code>wfmwiki-frontmatter.ts --check&lt;/code> against SCHEMA v1.0.1.&lt;/li>
+&lt;/ul>
+&lt;h2 id="decommission-plan">Decommission Plan&lt;/h2>
+&lt;p>The original wiki.wfmlabs.org will be retained as a 301 redirect to wiki.wfmlabs.com after Hugo site goes live. Original MediaWiki database not migrated — markdown is now the source of truth.&lt;/p></description></item></channel></rss>

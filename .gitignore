@@ -1,9 +1,4 @@
 _build/
-site/public/
-site/resources/
-site/.hugo_build.lock
-site/static/img/mediawiki/
-site/.wrangler/
 .DS_Store
 *.swp
 *.tmp
