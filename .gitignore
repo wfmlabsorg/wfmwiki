@@ -1,0 +1,9 @@
+_build/
+site/public/
+site/resources/
+.DS_Store
+*.swp
+*.tmp
+node_modules/
+.env
+.env.local
