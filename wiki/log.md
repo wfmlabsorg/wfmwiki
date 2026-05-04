@@ -6,6 +6,8 @@ Format: `## [YYYY-MM-DD HH:MM] {type} | {summary}` where type is one of `ingest 
 
 ---
 
+## [2026-05-04 11:51] publish | Phase 6 first deploy: wfmwiki.pages.dev live with 29 wiki pages + 5 site pages. CNAME wiki.wfmlabs.com → wfmwiki.pages.dev added in Netlify DNS. CF Pages domain validation in progress.
+
 ## [2026-05-04 11:26] migrate | Phase 5 integration complete: 27 pages → wiki/{synthesis|methods|comparisons|calculators}, 1 hand-port (Event Management), 1 source page, 73 images pulled, all 29 pages pass schema, 0 missing image refs.
 
 ## [2026-05-04 11:03] migrate | MediaWiki import: 36 pages parsed, 27 to wiki/_migrated/, 6 to site/content/, 2 prune, 1 manual-fix (Event Management table-with-template). Schema battle-test passed; v1.0.1 changelog entry.
