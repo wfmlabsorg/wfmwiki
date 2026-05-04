@@ -2,7 +2,7 @@
 
 *Auto-maintained by `wfmwiki-index.ts`. Manual edits will be overwritten.*
 
-**Last regenerated:** —
+**Last regenerated:** 2026-05-04
 **Total pages:** 0
 **Status:** scaffold
 
