@@ -1,6 +1,6 @@
 ---
 title: "WFM Labs Knowledge Wiki"
-type: "home"
+type: home
 description: "Next-generation workforce planning across the supply-and-demand industry. Contact centers as the foundational discipline."
 ---
 

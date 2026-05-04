@@ -6,6 +6,8 @@ Format: `## [YYYY-MM-DD HH:MM] {type} | {summary}` where type is one of `ingest 
 
 ---
 
+## [2026-05-04 12:17] publish | QA fixes: light theme as default, MediaWiki-inspired CSS polish, sidebar redesigned (Resources / Future WFM Playbook / Tools / Reference / External — mirrors original wfmlabs.org wiki). New homepage at wiki/_home.md with hero, positioning, get-started cards. Publish tool now processes top-level files + has prefix-matching slug resolver for anchor-style mangled slugs + bare-img path fix + wikilink shortcode uses Site.GetPage (sections resolve too). Stripped MediaWiki [[Category:*]] and [[Image:*]] artifacts. Final state: 0 raw [[]] on home, 8 wikilink-new (genuine missing concept stubs — diagnostic-reports, simulation-software, probability-variance-goals — proper red-link behavior).
+
 ## [2026-05-04 11:54] publish | wiki.wfmlabs.com LIVE: HTTP 200 across home + sample pages + images. CF Pages cert provisioned by Google CA. wfmwiki.pages.dev → wiki.wfmlabs.com via Netlify CNAME + CF Pages custom domain validation.
 
 ## [2026-05-04 11:51] publish | Phase 6 first deploy: wfmwiki.pages.dev live with 29 wiki pages + 5 site pages. CNAME wiki.wfmlabs.com → wfmwiki.pages.dev added in Netlify DNS. CF Pages domain validation in progress.

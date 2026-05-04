@@ -26,7 +26,7 @@ One of the most substantial concepts in the "Power of One" stresses how in a que
 
 ## Why Service Level?
 
-[[image-pow1-jpg|300px\|thumb\|right\|Power of One - Small Queues]]
+![\2](/img/mediawiki/uploaded-image)
 Service level is considered the call center industry-standard performance metric.
 
 By monitoring service levels and adjusting staff levels by interval, a contact center operation can ensure it operates optimally when measuring customer availability.
@@ -49,7 +49,7 @@ If we examine a queue requiring 50 people to staff, using a demand interval that
 
 In addition, the average speed of answer grows dramatically. If the queue were staffed missing five agents, the average speed of answer would increase by almost 5x, growing from 19 seconds to 285 seconds:
 
-[[image-pow2-jpg|Impact to SL & ASA]]
+![\2](/img/mediawiki/uploaded-image)
 
 This is a static view based on 175 calls with an AHT of 450 seconds - but what if I want to model a different size queue or different service level objectives? Below is a tool for dynamically calculating different size queues:
 

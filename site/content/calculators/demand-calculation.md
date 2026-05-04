@@ -12,4 +12,4 @@ A simple demand calculation leveraged across the industry to generate an approxi
 
 Base FTE Required = Call Volume Offered X Average Handle Time / 3600 / Total Annual Work Hours / Occupancy / (1 - Shrinkage)
 
-This calculation can be leveraged to establish a base FTE needed to service an annual workload in order to begin calculating the true costs associated with employee attrition, as described in the {{< wikilink "interpersonal-relationships-the-high-cost-of-employee-attrition" "High Cost of Attrition" >}}
+This calculation can be leveraged to establish a base FTE needed to service an annual workload in order to begin calculating the true costs associated with employee attrition, as described in the [High Cost of Attrition](/synthesis/interpersonal-relationships/#the-high-cost-of-employee-attrition)

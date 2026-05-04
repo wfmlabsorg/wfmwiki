@@ -82,7 +82,7 @@ Bibliographic snapshot of the original WFM Labs MediaWiki at https://wiki.wfmlab
 - **Conversion tool:** `wfmwiki-mediawiki-import.ts` (uses pandoc 3.1 `mediawiki → gfm`)
 - **Heuristic type assignment:** ~95% accurate on first pass. Manual override applied to 2 pages (`interpersonal-relationships`, `technology`) to upgrade from `concept` → `synthesis` based on context as sub-pages of the WFM Operating Standard thesis stack.
 - **Image references:** all migrated pages reference `../raw/assets/mediawiki/<filename>`. Image files migrated separately (not bundled in XML export).
-- **Wikilinks:** internal MediaWiki links converted to Obsidian `[[slug]]` syntax during import. Cross-references preserved.
+- **Wikilinks:** internal MediaWiki links converted to Obsidian-style double-bracket wikilink syntax during import. Cross-references preserved.
 - **Schema battle-test:** All 27 pages pass `wfmwiki-frontmatter.ts --check` against SCHEMA v1.0.1.
 
 ## Decommission Plan

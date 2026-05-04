@@ -10,7 +10,7 @@ tags: ["migrated-mediawiki"]
 ---
 ### New WFM Goals
 
-The future WFM standard outlines both traditional goals and new goals to address the changing dynamics described the {{< wikilink "changes-to-the-future-of-workforce-management-the-drivers-behind-the-need-for-change" "drivers behind the need for change" >}}, with special emphasis on "uncertainty".
+The future WFM standard outlines both traditional goals and new goals to address the changing dynamics described the [drivers behind the need for change](/synthesis/changes-to-the-future-of-workforce-management/#the-drivers-behind-the-need-for-change), with special emphasis on "uncertainty".
 
 #### Why Goals Matter in Workforce Management
 

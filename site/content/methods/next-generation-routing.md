@@ -207,6 +207,6 @@ Next-generation routing continues evolving toward **agentic AI capabilities** wh
 - [Amazon Connect - Cloud Contact Center Platform](https://aws.amazon.com/connect/)
 - [Model Context Protocol Specification](https://www.modelcontextprotocol.io/)
 
-{{< wikilink "category-contact-center-technology" >}} {{< wikilink "category-workforce-management" >}} {{< wikilink "category-artificial-intelligence" >}} {{< wikilink "category-business-process-automation" >}}
+   
 
 [^1]: Kyōdō Solutions: [Routing Intelligence Evolution Analysis](https://kyodo.solutions/routing-intelligence)

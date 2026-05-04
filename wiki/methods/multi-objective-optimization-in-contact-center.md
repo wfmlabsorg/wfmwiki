@@ -270,4 +270,4 @@ The key to success lies in building the **composable WFM ecosystem**—API-conne
 - [Kyōdō Solutions](https://kyodo.solutions/) - Contact center transformation consulting
 - [Model Context Protocol](https://www.modelcontextprotocol.io/) - API integration standards
 
-[[category-workforce-management]] [[category-operations-research]] [[category-contact-center-technology]] [[category-business-process-optimization]]
+   

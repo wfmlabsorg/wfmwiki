@@ -523,11 +523,11 @@ The choice between methodologies depends on the specific use case:
 
 Success requires understanding the mathematical foundations, proper model validation, and integration with the broader WFM ecosystem. As contact centers become more data-driven and analytical, both simulation approaches will play increasingly important roles in achieving operational excellence and competitive advantage.
 
-Modern implementations should leverage **[[multi-objective-optimization-in-contact-centers]]** principles, integrate with **[Resource Optimization Center (ROC)](Resource_Optimization_Center_(ROC) "wikilink")** monitoring, and support the **[[next-generation-routing]]** algorithms that depend on simulation-based insights for optimal performance.
+Modern implementations should leverage **[[multi-objective-optimization-in-contact-center]]** principles, integrate with **[Resource Optimization Center (ROC)](Resource_Optimization_Center_(ROC) "wikilink")** monitoring, and support the **[[next-generation-routing]]** algorithms that depend on simulation-based insights for optimal performance.
 
 ## Related Pages
 
-- **[[multi-objective-optimization-in-contact-centers]]** - Mathematical optimization using simulation results
+- **[[multi-objective-optimization-in-contact-center]]** - Mathematical optimization using simulation results
 - **[Resource Optimization Center (ROC)](Resource_Optimization_Center_(ROC) "wikilink")** - Operational monitoring and simulation oversight
 - **[[next-generation-routing]]** - Routing algorithms informed by simulation models
 - **[[wfm-labs-risk-score]]** - Risk assessment methodology using Monte Carlo techniques
@@ -540,4 +540,4 @@ Modern implementations should leverage **[[multi-objective-optimization-in-conta
 - [NumPy Random](https://numpy.org/doc/stable/reference/random/) - Python tools for Monte Carlo simulation
 - [Kyōdō Solutions](https://kyodo.solutions/) - Workforce management consulting and simulation services
 
-[[category-workforce-management]] [[category-operations-research]] [[category-simulation-modeling]] [[category-capacity-planning]] [[category-risk-management]]
+    

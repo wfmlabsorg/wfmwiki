@@ -515,11 +515,11 @@ The choice between methodologies depends on the specific use case:
 
 Success requires understanding the mathematical foundations, proper model validation, and integration with the broader WFM ecosystem. As contact centers become more data-driven and analytical, both simulation approaches will play increasingly important roles in achieving operational excellence and competitive advantage.
 
-Modern implementations should leverage **{{< wikilink "multi-objective-optimization-in-contact-centers" >}}** principles, integrate with **[Resource Optimization Center (ROC)](Resource_Optimization_Center_(ROC) "wikilink")** monitoring, and support the **{{< wikilink "methods/next-generation-routing" >}}** algorithms that depend on simulation-based insights for optimal performance.
+Modern implementations should leverage **{{< wikilink "methods/multi-objective-optimization-in-contact-center" >}}** principles, integrate with **[Resource Optimization Center (ROC)](Resource_Optimization_Center_(ROC) "wikilink")** monitoring, and support the **{{< wikilink "methods/next-generation-routing" >}}** algorithms that depend on simulation-based insights for optimal performance.
 
 ## Related Pages
 
-- **{{< wikilink "multi-objective-optimization-in-contact-centers" >}}** - Mathematical optimization using simulation results
+- **{{< wikilink "methods/multi-objective-optimization-in-contact-center" >}}** - Mathematical optimization using simulation results
 - **[Resource Optimization Center (ROC)](Resource_Optimization_Center_(ROC) "wikilink")** - Operational monitoring and simulation oversight
 - **{{< wikilink "methods/next-generation-routing" >}}** - Routing algorithms informed by simulation models
 - **{{< wikilink "synthesis/wfm-labs-risk-score" >}}** - Risk assessment methodology using Monte Carlo techniques
@@ -532,4 +532,4 @@ Modern implementations should leverage **{{< wikilink "multi-objective-optimizat
 - [NumPy Random](https://numpy.org/doc/stable/reference/random/) - Python tools for Monte Carlo simulation
 - [Kyōdō Solutions](https://kyodo.solutions/) - Workforce management consulting and simulation services
 
-{{< wikilink "category-workforce-management" >}} {{< wikilink "category-operations-research" >}} {{< wikilink "category-simulation-modeling" >}} {{< wikilink "category-capacity-planning" >}} {{< wikilink "category-risk-management" >}}
+    

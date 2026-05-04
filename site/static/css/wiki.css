@@ -1578,3 +1578,176 @@ a.meta-link:hover { text-decoration: underline; }
   .page-list-item { flex-direction: column; }
   .page-list-meta { align-items: flex-start; flex-direction: row; }
 }
+
+/* ============================================================
+   LIGHT THEME (default) — MediaWiki-inspired
+   Override the dark :root above. Apply data-theme="dark" attribute
+   on <html> to switch back to the dark palette.
+   ============================================================ */
+:root {
+  --bg-base:        #ffffff;
+  --bg-surface:     #f8f9fa;
+  --bg-elevated:    #ffffff;
+  --bg-hover:       #eaecf0;
+  --bg-active:      #e1eaff;
+
+  --border-subtle:  #eaecf0;
+  --border-default: #c8ccd1;
+  --border-strong:  #a2a9b1;
+
+  --text-primary:   #202122;
+  --text-secondary: #54595d;
+  --text-muted:     #72777d;
+  --text-link:      #3366cc;
+  --text-link-hover:#447ff5;
+
+  --accent-blue:    #3366cc;
+  --accent-glow:    rgba(51, 102, 204, 0.08);
+
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+  --shadow:    0 2px 4px rgba(0,0,0,0.08);
+  --shadow-lg: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* DARK THEME OVERRIDE */
+[data-theme="dark"] {
+  --bg-base:        #0a0e1a;
+  --bg-surface:     #0f1526;
+  --bg-elevated:    #161d30;
+  --bg-hover:       #1c2540;
+  --bg-active:      #1e2d4a;
+
+  --border-subtle:  #1e2a42;
+  --border-default: #263454;
+  --border-strong:  #2e4070;
+
+  --text-primary:   #e2e8f8;
+  --text-secondary: #8a9bc8;
+  --text-muted:     #4a5a80;
+  --text-link:      #6ba3e0;
+  --text-link-hover:#90c0f0;
+
+  --accent-blue:    #3a7bd5;
+  --accent-glow:    rgba(58, 123, 213, 0.15);
+
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.4);
+  --shadow:    0 2px 8px rgba(0,0,0,0.5);
+  --shadow-lg: 0 4px 20px rgba(0,0,0,0.6);
+}
+
+/* ============================================================
+   MediaWiki-style article polish (applies in both themes)
+   ============================================================ */
+
+/* Article body — generous spacing, serif-ish type for body */
+.article-content {
+  font-size: 1rem;
+  line-height: 1.65;
+  max-width: 880px;
+}
+
+.article-content h1,
+.article-content h2 {
+  font-weight: 600;
+  border-bottom: 1px solid var(--border-default);
+  padding-bottom: 0.3em;
+  margin-top: 1.4em;
+  margin-bottom: 0.6em;
+}
+
+.article-content h3,
+.article-content h4 {
+  font-weight: 600;
+  margin-top: 1.2em;
+  margin-bottom: 0.4em;
+}
+
+.article-content p {
+  margin-bottom: 1em;
+}
+
+.article-content ul,
+.article-content ol {
+  margin: 0.6em 0 1em 1.5em;
+}
+
+.article-content li {
+  margin-bottom: 0.3em;
+}
+
+.article-content table {
+  border-collapse: collapse;
+  margin: 1em 0;
+  width: 100%;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-default);
+}
+
+.article-content th,
+.article-content td {
+  border: 1px solid var(--border-default);
+  padding: 0.5em 0.75em;
+  text-align: left;
+  vertical-align: top;
+}
+
+.article-content th {
+  background: var(--bg-hover);
+  font-weight: 600;
+}
+
+.article-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  margin: 1em 0;
+}
+
+.article-content blockquote {
+  border-left: 3px solid var(--accent-blue);
+  padding-left: 1em;
+  margin: 1em 0;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.article-content code {
+  background: var(--bg-hover);
+  padding: 0.15em 0.4em;
+  border-radius: var(--radius-sm);
+  font-size: 0.92em;
+}
+
+.article-content pre {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  padding: 1em;
+  overflow-x: auto;
+  border-radius: var(--radius);
+  margin: 1em 0;
+}
+
+.article-content pre code {
+  background: none;
+  padding: 0;
+}
+
+/* Wikilinks */
+.wikilink-exists {
+  color: var(--text-link);
+  text-decoration: none;
+}
+.wikilink-exists:hover {
+  text-decoration: underline;
+  color: var(--text-link-hover);
+}
+.wikilink-new {
+  color: #ba0000;
+  text-decoration: none;
+}
+.wikilink-new:hover {
+  text-decoration: underline;
+}
+.wikilink-icon {
+  display: none; /* hide the FA icon — distracting */
+}

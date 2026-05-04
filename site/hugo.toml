@@ -17,7 +17,7 @@ title = "WFM Labs Knowledge Wiki"
       [markup.goldmark.extensions.wikilinks]
         enabled = false
   [markup.highlight]
-    style = "monokai"
+    style = "github"
     noClasses = false
     lineNos = true
   [markup.tableOfContents]
@@ -54,107 +54,216 @@ ignoreLogs = ['warning-frontmatter-params-overrides']
   status   = "statuses"
 
 # ============================================================
-# Sidebar Menu — Grouped by content type
+# Sidebar — mirrors the original wiki.wfmlabs.org structure
 # ============================================================
 
+# --- Resources ---
 [[menus.sidebar]]
-  name       = "Frameworks"
-  identifier = "group-frameworks"
+  name       = "Resources"
+  identifier = "group-resources"
   weight     = 10
   [menus.sidebar.params]
     isGroup = true
 
 [[menus.sidebar]]
-  name       = "Synthesis"
-  url        = "/synthesis/"
+  name       = "Maturity Model™"
+  url        = "/synthesis/wfm-labs-maturity-model/"
   weight     = 11
-  identifier = "synthesis"
-  parent     = "group-frameworks"
+  identifier = "maturity-model"
+  parent     = "group-resources"
   [menus.sidebar.params]
-    icon = "lightbulb"
+    icon = "chart-line"
 
 [[menus.sidebar]]
-  name       = "Calculators"
-  url        = "/calculators/"
+  name       = "Risk Score™"
+  url        = "/synthesis/wfm-labs-risk-score/"
   weight     = 12
-  identifier = "calculators"
-  parent     = "group-frameworks"
+  identifier = "risk-score"
+  parent     = "group-resources"
   [menus.sidebar.params]
-    icon = "calculator"
+    icon = "triangle-exclamation"
 
 [[menus.sidebar]]
-  name       = "Practice"
-  identifier = "group-practice"
+  name       = "Erlang-O™"
+  url        = "/synthesis/wfm-labs-erlang-o/"
+  weight     = 13
+  identifier = "erlang-o"
+  parent     = "group-resources"
+  [menus.sidebar.params]
+    icon = "wave-square"
+
+[[menus.sidebar]]
+  name       = "WFM Assessment"
+  url        = "/synthesis/wfm-assessment/"
+  weight     = 14
+  identifier = "wfm-assessment"
+  parent     = "group-resources"
+  [menus.sidebar.params]
+    icon = "clipboard-check"
+
+# --- Future WFM Playbook ---
+[[menus.sidebar]]
+  name       = "Future WFM Playbook"
+  identifier = "group-playbook"
   weight     = 20
   [menus.sidebar.params]
     isGroup = true
 
 [[menus.sidebar]]
+  name       = "Introduction"
+  url        = "/synthesis/future-wfm-operating-standard/"
+  weight     = 21
+  identifier = "playbook-intro"
+  parent     = "group-playbook"
+  [menus.sidebar.params]
+    icon = "book-open"
+
+[[menus.sidebar]]
+  name       = "Why Now & Principles"
+  url        = "/synthesis/changes-to-the-future-of-workforce-management/"
+  weight     = 22
+  identifier = "playbook-changes"
+  parent     = "group-playbook"
+  [menus.sidebar.params]
+    icon = "compass"
+
+[[menus.sidebar]]
+  name       = "Traditional WFM"
+  url        = "/synthesis/workforce-management-standard-introduction/"
+  weight     = 23
+  identifier = "playbook-traditional"
+  parent     = "group-playbook"
+  [menus.sidebar.params]
+    icon = "scroll"
+
+[[menus.sidebar]]
+  name       = "WFM Goals"
+  url        = "/synthesis/wfm-goals/"
+  weight     = 24
+  identifier = "playbook-goals"
+  parent     = "group-playbook"
+  [menus.sidebar.params]
+    icon = "bullseye"
+
+[[menus.sidebar]]
+  name       = "WFM Roles"
+  url        = "/synthesis/wfm-roles/"
+  weight     = 25
+  identifier = "playbook-roles"
+  parent     = "group-playbook"
+  [menus.sidebar.params]
+    icon = "people-group"
+
+[[menus.sidebar]]
+  name       = "WFM Processes"
+  url        = "/synthesis/wfm-processes/"
+  weight     = 26
+  identifier = "playbook-processes"
+  parent     = "group-playbook"
+  [menus.sidebar.params]
+    icon = "diagram-project"
+
+[[menus.sidebar]]
+  name       = "Relationships"
+  url        = "/synthesis/interpersonal-relationships/"
+  weight     = 27
+  identifier = "playbook-relationships"
+  parent     = "group-playbook"
+  [menus.sidebar.params]
+    icon = "handshake"
+
+[[menus.sidebar]]
+  name       = "Technology"
+  url        = "/synthesis/technology/"
+  weight     = 28
+  identifier = "playbook-technology"
+  parent     = "group-playbook"
+  [menus.sidebar.params]
+    icon = "microchip"
+
+# --- Tools ---
+[[menus.sidebar]]
+  name       = "Tools"
+  identifier = "group-tools"
+  weight     = 30
+  [menus.sidebar.params]
+    isGroup = true
+
+[[menus.sidebar]]
+  name       = "Calculators"
+  url        = "/calculators/"
+  weight     = 31
+  identifier = "calculators"
+  parent     = "group-tools"
+  [menus.sidebar.params]
+    icon = "calculator"
+
+[[menus.sidebar]]
   name       = "Methods"
   url        = "/methods/"
-  weight     = 21
+  weight     = 32
   identifier = "methods"
-  parent     = "group-practice"
+  parent     = "group-tools"
   [menus.sidebar.params]
     icon = "list-check"
 
 [[menus.sidebar]]
   name       = "Comparisons"
   url        = "/comparisons/"
-  weight     = 22
+  weight     = 33
   identifier = "comparisons"
-  parent     = "group-practice"
+  parent     = "group-tools"
   [menus.sidebar.params]
     icon = "scale-balanced"
 
-[[menus.sidebar]]
-  name       = "Concepts"
-  url        = "/concepts/"
-  weight     = 23
-  identifier = "concepts"
-  parent     = "group-practice"
-  [menus.sidebar.params]
-    icon = "diagram-project"
-
+# --- Reference ---
 [[menus.sidebar]]
   name       = "Reference"
   identifier = "group-reference"
-  weight     = 30
+  weight     = 40
   [menus.sidebar.params]
     isGroup = true
 
 [[menus.sidebar]]
+  name       = "All Synthesis"
+  url        = "/synthesis/"
+  weight     = 41
+  identifier = "all-synthesis"
+  parent     = "group-reference"
+  [menus.sidebar.params]
+    icon = "lightbulb"
+
+[[menus.sidebar]]
   name       = "Sources"
   url        = "/sources/"
-  weight     = 31
+  weight     = 42
   identifier = "sources"
   parent     = "group-reference"
   [menus.sidebar.params]
     icon = "book"
 
 [[menus.sidebar]]
-  name       = "Tools (Vendor)"
-  url        = "/tools/"
-  weight     = 32
-  identifier = "tools"
-  parent     = "group-reference"
-  [menus.sidebar.params]
-    icon = "screwdriver-wrench"
-
-[[menus.sidebar]]
-  name       = "Practitioners"
-  url        = "/practitioners/"
-  weight     = 33
-  identifier = "practitioners"
-  parent     = "group-reference"
-  [menus.sidebar.params]
-    icon = "user"
-
-[[menus.sidebar]]
   name       = "Glossary"
   url        = "/glossary/"
-  weight     = 34
+  weight     = 43
   identifier = "glossary"
   parent     = "group-reference"
   [menus.sidebar.params]
     icon = "spell-check"
+
+# --- External ---
+[[menus.sidebar]]
+  name       = "WFM Labs"
+  url        = "https://www.wfmlabs.org"
+  weight     = 91
+  identifier = "ext-wfmlabs"
+  [menus.sidebar.params]
+    icon = "arrow-up-right-from-square"
+
+[[menus.sidebar]]
+  name       = "Community"
+  url        = "https://community.wfmlabs.org"
+  weight     = 92
+  identifier = "ext-community"
+  [menus.sidebar.params]
+    icon = "arrow-up-right-from-square"

@@ -34,6 +34,6 @@ Each category has a subset of likely suspects which lead to the major cause. Exa
 
 [[diagnostic-reports]]
 
-[[category-resource-optimization-center]]
+
 
 [^1]: Wikipedia: Ishikawa diagram <http://en.wikipedia.org/wiki/Ishikawa_diagram>
