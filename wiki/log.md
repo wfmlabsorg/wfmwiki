@@ -6,6 +6,8 @@ Format: `## [YYYY-MM-DD HH:MM] {type} | {summary}` where type is one of `ingest 
 
 ---
 
+## [2026-05-04 11:26] migrate | Phase 5 integration complete: 27 pages → wiki/{synthesis|methods|comparisons|calculators}, 1 hand-port (Event Management), 1 source page, 73 images pulled, all 29 pages pass schema, 0 missing image refs.
+
 ## [2026-05-04 11:03] migrate | MediaWiki import: 36 pages parsed, 27 to wiki/_migrated/, 6 to site/content/, 2 prune, 1 manual-fix (Event Management table-with-template). Schema battle-test passed; v1.0.1 changelog entry.
 
 ## [2026-05-04 10:28] init | Phase 0 complete — scaffold, schema, mission, skill, 4 tools verified. Ready for Phase 1 stop gate.
