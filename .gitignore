@@ -1,6 +1,8 @@
 _build/
 site/public/
 site/resources/
+site/.hugo_build.lock
+site/static/img/mediawiki/
 .DS_Store
 *.swp
 *.tmp

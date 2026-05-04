@@ -1,0 +1,160 @@
+baseURL = "https://wiki.wfmlabs.com"
+languageCode = "en-us"
+title = "WFM Labs Knowledge Wiki"
+
+[params]
+  author = "Ted Lango"
+  description = "WFM Labs Knowledge Wiki — next-generation workforce planning across the supply-and-demand industry. Contact centers as the foundational discipline."
+  siteVersion = "1.0.0"
+  logoText = "WFM Labs Wiki"
+  logoIcon = "book-atlas"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.wikilinks]
+        enabled = false
+  [markup.highlight]
+    style = "monokai"
+    noClasses = false
+    lineNos = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+    ordered = false
+
+[outputs]
+  home    = ["HTML", "SearchIndex"]
+  page    = ["HTML"]
+  section = ["HTML"]
+
+[outputFormats]
+  [outputFormats.SearchIndex]
+    mediaType       = "application/json"
+    baseName        = "search-index"
+    isPlainText     = true
+    notAlternative  = true
+
+enableRobotsTXT = true
+enableGitInfo   = true
+summaryLength   = 70
+
+ignoreLogs = ['warning-frontmatter-params-overrides']
+
+[frontmatter]
+  date     = ["date", "created", ":default"]
+  lastmod  = [":git", "updated", "lastmod", "date"]
+
+[taxonomies]
+  tag      = "tags"
+  domain   = "domains"
+  aperture = "apertures"
+  status   = "statuses"
+
+# ============================================================
+# Sidebar Menu — Grouped by content type
+# ============================================================
+
+[[menus.sidebar]]
+  name       = "Frameworks"
+  identifier = "group-frameworks"
+  weight     = 10
+  [menus.sidebar.params]
+    isGroup = true
+
+[[menus.sidebar]]
+  name       = "Synthesis"
+  url        = "/synthesis/"
+  weight     = 11
+  identifier = "synthesis"
+  parent     = "group-frameworks"
+  [menus.sidebar.params]
+    icon = "lightbulb"
+
+[[menus.sidebar]]
+  name       = "Calculators"
+  url        = "/calculators/"
+  weight     = 12
+  identifier = "calculators"
+  parent     = "group-frameworks"
+  [menus.sidebar.params]
+    icon = "calculator"
+
+[[menus.sidebar]]
+  name       = "Practice"
+  identifier = "group-practice"
+  weight     = 20
+  [menus.sidebar.params]
+    isGroup = true
+
+[[menus.sidebar]]
+  name       = "Methods"
+  url        = "/methods/"
+  weight     = 21
+  identifier = "methods"
+  parent     = "group-practice"
+  [menus.sidebar.params]
+    icon = "list-check"
+
+[[menus.sidebar]]
+  name       = "Comparisons"
+  url        = "/comparisons/"
+  weight     = 22
+  identifier = "comparisons"
+  parent     = "group-practice"
+  [menus.sidebar.params]
+    icon = "scale-balanced"
+
+[[menus.sidebar]]
+  name       = "Concepts"
+  url        = "/concepts/"
+  weight     = 23
+  identifier = "concepts"
+  parent     = "group-practice"
+  [menus.sidebar.params]
+    icon = "diagram-project"
+
+[[menus.sidebar]]
+  name       = "Reference"
+  identifier = "group-reference"
+  weight     = 30
+  [menus.sidebar.params]
+    isGroup = true
+
+[[menus.sidebar]]
+  name       = "Sources"
+  url        = "/sources/"
+  weight     = 31
+  identifier = "sources"
+  parent     = "group-reference"
+  [menus.sidebar.params]
+    icon = "book"
+
+[[menus.sidebar]]
+  name       = "Tools (Vendor)"
+  url        = "/tools/"
+  weight     = 32
+  identifier = "tools"
+  parent     = "group-reference"
+  [menus.sidebar.params]
+    icon = "screwdriver-wrench"
+
+[[menus.sidebar]]
+  name       = "Practitioners"
+  url        = "/practitioners/"
+  weight     = 33
+  identifier = "practitioners"
+  parent     = "group-reference"
+  [menus.sidebar.params]
+    icon = "user"
+
+[[menus.sidebar]]
+  name       = "Glossary"
+  url        = "/glossary/"
+  weight     = 34
+  identifier = "glossary"
+  parent     = "group-reference"
+  [menus.sidebar.params]
+    icon = "spell-check"

@@ -1,0 +1,25 @@
+{{/*
+  callout shortcode — info/warning/tip boxes
+  Usage: {{< callout type="info" title="Note" >}}Content here{{< /callout >}}
+  Types: info, warning, tip, danger
+*/}}
+{{ $type  := .Get "type"  | default "info" }}
+{{ $title := .Get "title" | default (title $type) }}
+
+{{ $icons := dict
+  "info"    "circle-info"
+  "warning" "triangle-exclamation"
+  "tip"     "lightbulb"
+  "danger"  "skull-crossbones"
+}}
+{{ $icon := index $icons $type | default "circle-info" }}
+
+<div class="callout callout-{{ $type }}">
+  <div class="callout-header">
+    <i class="fa-solid fa-{{ $icon }}"></i>
+    <span class="callout-title">{{ $title }}</span>
+  </div>
+  <div class="callout-body">
+    {{ .Inner | markdownify }}
+  </div>
+</div>

@@ -1,0 +1,148 @@
+{{ define "main" }}
+<article class="wiki-article" data-page-id="{{ .RelPermalink }}">
+
+  <!-- Article header -->
+  <header class="article-header">
+    <div class="article-breadcrumb">
+      <a href="{{ "/" | absURL }}">Codex</a>
+      {{ with .Parent }}
+      <span class="breadcrumb-sep"><i class="fa-solid fa-chevron-right"></i></span>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{ end }}
+      <span class="breadcrumb-sep"><i class="fa-solid fa-chevron-right"></i></span>
+      <span class="breadcrumb-current">{{ .Title }}</span>
+    </div>
+
+    <h1 class="article-title">{{ .Title }}</h1>
+
+    <div class="article-meta">
+      {{ with .Params.type }}
+      <span class="type-badge type-{{ . }}">{{ . }}</span>
+      {{ end }}
+      {{ with .Params.status }}
+      <span class="status-badge status-{{ . }}">{{ . }}</span>
+      {{ end }}
+      {{ with .Params.lifecycle }}
+      <span class="lifecycle-badge lifecycle-{{ . }}">{{ . }}</span>
+      {{ end }}
+      {{ with .Date }}
+      <span class="meta-item">
+        <i class="fa-regular fa-calendar"></i>
+        <time datetime="{{ .Format "2006-01-02" }}">{{ .Format "Jan 2, 2006" }}</time>
+      </span>
+      {{ end }}
+      {{ with .Lastmod }}
+      {{ if ne (.Format "2006-01-02") ($.Date.Format "2006-01-02") }}
+      <span class="meta-item meta-updated">
+        <i class="fa-regular fa-clock"></i>
+        Updated {{ .Format "Jan 2, 2006" }}
+      </span>
+      {{ end }}
+      {{ end }}
+    </div>
+
+    {{ with .Params.domains }}
+    <div class="article-domains">
+      {{ range . }}
+      <a href="{{ "/domains/" | absURL }}{{ . | urlize }}/" class="domain-badge">{{ . }}</a>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    {{ with .Params.tags }}
+    <div class="article-tags">
+      {{ range . }}
+      <a href="{{ "/tags/" | absURL }}{{ . | urlize }}/" class="tag">{{ . }}</a>
+      {{ end }}
+    </div>
+    {{ end }}
+  </header>
+
+  <div class="article-layout">
+
+    <!-- Article body -->
+    <div class="article-body">
+      <div class="article-content">
+        {{ .Content }}
+      </div>
+
+      <!-- Backlinks section -->
+      {{ partial "backlinks.html" . }}
+    </div>
+
+    <!-- Right sidebar: TOC + Meta -->
+    <aside class="article-sidebar">
+      {{ if .TableOfContents }}
+      <div class="toc-box">
+        <div class="toc-header">
+          <i class="fa-solid fa-list"></i>
+          <span>Contents</span>
+        </div>
+        <div class="toc-content">
+          {{ .TableOfContents }}
+        </div>
+      </div>
+      {{ end }}
+
+      <!-- Page metadata card -->
+      <div class="meta-card">
+        <div class="meta-card-title">Page Info</div>
+        {{ with .Params.type }}
+        <div class="meta-card-row">
+          <span class="meta-card-label">Type</span>
+          <span class="type-badge type-{{ . }}">{{ . }}</span>
+        </div>
+        {{ end }}
+        {{ with .Params.project }}
+        <div class="meta-card-row">
+          <span class="meta-card-label">Project</span>
+          <a href="{{ "/projects/" | absURL }}{{ . | urlize }}/" class="meta-card-value link">{{ . }}</a>
+        </div>
+        {{ end }}
+        {{ with .Params.status }}
+        <div class="meta-card-row">
+          <span class="meta-card-label">Status</span>
+          <span class="status-badge status-{{ . }}">{{ . }}</span>
+        </div>
+        {{ end }}
+        {{ with .Params.lifecycle }}
+        <div class="meta-card-row">
+          <span class="meta-card-label">Lifecycle</span>
+          <span class="lifecycle-badge lifecycle-{{ . }}">{{ . }}</span>
+        </div>
+        {{ end }}
+        {{ with .Params.related }}
+        <div class="meta-card-row meta-card-links">
+          <span class="meta-card-label">Related</span>
+          <div class="meta-card-value">
+            {{ range . }}
+            <a href="{{ "/" | absURL }}{{ . }}/" class="meta-link">{{ . }}</a>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+        {{ with .Params.sources }}
+        <div class="meta-card-row meta-card-links">
+          <span class="meta-card-label">Sources</span>
+          <div class="meta-card-value">
+            {{ range . }}
+            <span class="meta-source">{{ . }}</span>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+        <div class="meta-card-row">
+          <span class="meta-card-label">Word count</span>
+          <span class="meta-card-value">{{ .WordCount }}</span>
+        </div>
+        <div class="meta-card-row">
+          <span class="meta-card-label">Read time</span>
+          <span class="meta-card-value">{{ .ReadingTime }} min</span>
+        </div>
+      </div>
+    </aside>
+
+  </div><!-- .article-layout -->
+
+</article>
+{{ end }}

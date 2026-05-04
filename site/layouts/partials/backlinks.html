@@ -1,0 +1,50 @@
+{{/*
+  backlinks.html — finds all pages that link TO the current page
+  via their frontmatter "related" field (or legacy "links_to")
+*/}}
+{{ $currentPath := .RelPermalink | strings.TrimPrefix "/" | strings.TrimSuffix "/" }}
+{{ $backlinks := slice }}
+
+{{ range .Site.RegularPages }}
+  {{ $page := . }}
+  {{/* Check related field */}}
+  {{ with .Params.related }}
+    {{ range . }}
+      {{ if eq . $currentPath }}
+        {{ $backlinks = $backlinks | append $page }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{/* Legacy: check links_to field */}}
+  {{ with .Params.links_to }}
+    {{ range . }}
+      {{ if eq . $currentPath }}
+        {{ $backlinks = $backlinks | append $page }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ if $backlinks }}
+<div class="backlinks-section">
+  <h3 class="backlinks-title">
+    <i class="fa-solid fa-arrow-turn-up fa-flip-horizontal"></i>
+    Linked from ({{ len $backlinks }})
+  </h3>
+  <ul class="backlinks-list">
+    {{ range $backlinks }}
+    <li class="backlinks-item">
+      <a href="{{ .RelPermalink }}" class="backlinks-link">
+        <span class="backlinks-page-title">{{ .Title }}</span>
+        {{ with .Params.type }}
+        <span class="type-badge type-{{ . }} type-sm">{{ . }}</span>
+        {{ end }}
+        {{ with .Summary }}
+        <span class="backlinks-excerpt">{{ . | truncate 80 }}</span>
+        {{ end }}
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}

@@ -1,0 +1,16 @@
+[
+  {{- range $i, $page := .Site.RegularPages -}}
+  {{- if $i }},{{ end -}}
+  {
+    "id":      {{ $i }},
+    "title":   {{ $page.Title | jsonify }},
+    "url":     {{ $page.RelPermalink | absURL | jsonify }},
+    "section": {{ $page.Section | jsonify }},
+    "type":    {{ $page.Params.type | jsonify }},
+    "tags":    {{ $page.Params.tags | jsonify }},
+    "domains": {{ $page.Params.domains | jsonify }},
+    "status":  {{ $page.Params.status | jsonify }},
+    "content": {{ $page.Plain | truncate 500 | jsonify }}
+  }
+  {{- end }}
+]

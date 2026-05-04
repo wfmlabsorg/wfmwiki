@@ -1,0 +1,175 @@
+{{ define "main" }}
+<div class="wiki-list-page">
+
+  <header class="list-header">
+    <div class="article-breadcrumb">
+      {{ if not .IsHome }}
+      <a href="{{ "/" | absURL }}">Codex</a>
+      <span class="breadcrumb-sep"><i class="fa-solid fa-chevron-right"></i></span>
+      <span class="breadcrumb-current">{{ .Title }}</span>
+      {{ end }}
+    </div>
+    <h1 class="list-title">{{ .Title }}</h1>
+    {{ with .Content }}
+    <div class="list-description">{{ . }}</div>
+    {{ end }}
+  </header>
+
+  {{ if .IsHome }}
+  <!-- Home dashboard -->
+  <div class="home-dashboard">
+
+    <div class="dashboard-stats">
+      {{ $allPages := .Site.RegularPages }}
+      <div class="stat-card">
+        <div class="stat-number">{{ len $allPages }}</div>
+        <div class="stat-label">Pages</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">{{ len (where $allPages "Params.status" "active") }}</div>
+        <div class="stat-label">Active</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">{{ len (where $allPages "Params.type" "skill") }}</div>
+        <div class="stat-label">Skills</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">{{ len (where $allPages "Params.type" "decision") }}</div>
+        <div class="stat-label">Decisions</div>
+      </div>
+      <div class="stat-card">
+        <a href="{{ "/graph/" | absURL }}" class="stat-card-link">
+          <div class="stat-number"><i class="fa-solid fa-share-nodes"></i></div>
+          <div class="stat-label">Graph</div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Grouped section cards -->
+    {{ $groups := dict
+      "Work" (slice "projects" "roadmap" "experiments")
+      "System" (slice "skills" "agents" "infrastructure" "tools" "hooks")
+      "Knowledge" (slice "decisions" "learnings" "patterns" "principles" "research")
+      "Reference" (slice "reference" "people" "glossary")
+    }}
+
+    {{ range $groupName, $sections := $groups }}
+    <div class="dashboard-group">
+      <h2 class="dashboard-group-title">{{ $groupName }}</h2>
+      <div class="dashboard-grid">
+        {{ range $sections }}
+        {{ $section := site.GetPage (printf "/%s" .) }}
+        {{ if $section }}
+        <div class="section-card section-card-{{ . }}">
+          <div class="section-card-header">
+            <h3 class="section-card-title">
+              <a href="{{ $section.RelPermalink }}">{{ $section.Title }}</a>
+            </h3>
+            <span class="section-count">{{ len $section.RegularPages }}</span>
+          </div>
+          {{ if gt (len $section.RegularPages) 0 }}
+          <ul class="section-card-list">
+            {{ range first 4 $section.RegularPages.ByLastmod.Reverse }}
+            <li>
+              <a href="{{ .RelPermalink }}" class="section-card-link">
+                <span class="section-card-link-title">{{ .Title | truncate 40 }}</span>
+                {{ with .Params.status }}<span class="status-badge status-{{ . }} status-sm">{{ . }}</span>{{ end }}
+              </a>
+            </li>
+            {{ end }}
+          </ul>
+          {{ if gt (len $section.RegularPages) 4 }}
+          <a href="{{ $section.RelPermalink }}" class="section-card-more">
+            +{{ sub (len $section.RegularPages) 4 }} more &rarr;
+          </a>
+          {{ end }}
+          {{ else }}
+          <p class="section-card-empty">No pages yet</p>
+          {{ end }}
+        </div>
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+
+    <!-- Recent activity -->
+    <div class="recent-activity">
+      <h2 class="recent-activity-title">
+        <i class="fa-solid fa-clock-rotate-left"></i>
+        Recently Updated
+      </h2>
+      <div class="activity-list">
+        {{ range first 10 .Site.RegularPages.ByLastmod.Reverse }}
+        <div class="activity-item">
+          <div class="activity-meta">
+            {{ with .Params.type }}<span class="activity-type activity-type-{{ . }}">{{ . }}</span>{{ end }}
+            <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "Jan 2" }}</time>
+          </div>
+          <a href="{{ .RelPermalink }}" class="activity-title">{{ .Title }}</a>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+
+  </div><!-- .home-dashboard -->
+
+  {{ else }}
+  <!-- Section list -->
+  <div class="section-list">
+
+    {{ if .Sections }}
+    <div class="subsection-grid">
+      {{ range .Sections }}
+      <div class="subsection-card">
+        <a href="{{ .RelPermalink }}">
+          <h3>{{ .Title }}</h3>
+          <span>{{ len .RegularPages }} pages</span>
+        </a>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    {{ $pages := .RegularPages.ByDate.Reverse }}
+    {{ if $pages }}
+    <div class="page-list">
+      {{ range $pages }}
+      <div class="page-list-item">
+        <div class="page-list-main">
+          <a href="{{ .RelPermalink }}" class="page-list-title">{{ .Title }}</a>
+          {{ with .Description }}
+          <p class="page-list-summary">{{ . }}</p>
+          {{ else }}
+          {{ with .Summary }}
+          <p class="page-list-summary">{{ . | truncate 120 }}</p>
+          {{ end }}
+          {{ end }}
+        </div>
+        <div class="page-list-meta">
+          {{ with .Params.status }}<span class="status-badge status-{{ . }}">{{ . }}</span>{{ end }}
+          {{ with .Params.lifecycle }}<span class="lifecycle-badge lifecycle-{{ . }}">{{ . }}</span>{{ end }}
+          <time datetime="{{ .Date.Format "2006-01-02" }}" class="page-list-date">{{ .Date.Format "Jan 2006" }}</time>
+          {{ with .Params.tags }}
+          <div class="page-list-tags">
+            {{ range first 3 . }}<span class="tag tag-sm">{{ . }}</span>{{ end }}
+          </div>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    {{ if not $pages }}
+    <div class="empty-section">
+      <i class="fa-solid fa-file-circle-plus empty-icon"></i>
+      <p>No pages yet. Add markdown files to <code>content/{{ .Section }}/</code></p>
+    </div>
+    {{ end }}
+
+  </div>
+  {{ end }}
+
+</div>
+{{ end }}

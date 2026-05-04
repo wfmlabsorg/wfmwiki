@@ -1,0 +1,12 @@
+{{/*
+  status shortcode — renders a project status badge
+  Usage: {{< status "active" >}}
+  Usage: {{< status "completed" "Completed Jan 2026" >}}
+*/}}
+{{ $status  := .Get 0 | default "unknown" }}
+{{ $tooltip := .Get 1 }}
+
+<span class="status-badge status-{{ $status }}"
+  {{ with $tooltip }}title="{{ . }}"{{ end }}>
+  {{ $status }}
+</span>

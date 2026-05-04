@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
+
+  <!-- Preconnect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="{{ "css/wiki.css" | absURL }}">
+
+  {{ block "head" . }}{{ end }}
+</head>
+<body>
+
+  <!-- Mobile overlay -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- Sidebar toggle (mobile) -->
+  <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle navigation">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+
+  <!-- Sidebar -->
+  <aside class="wiki-sidebar" id="wikiSidebar">
+    <div class="sidebar-header">
+      <a href="{{ "/" | absURL }}" class="sidebar-logo">
+        <span class="logo-icon"><i class="fa-solid fa-{{ .Site.Params.logoIcon | default "book-atlas" }}"></i></span>
+        <span class="logo-text">{{ .Site.Params.logoText | default .Site.Title }}</span>
+      </a>
+    </div>
+
+    <!-- Search -->
+    <div class="sidebar-search">
+      <div class="search-input-wrapper">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" id="wikiSearch" placeholder="Search..." autocomplete="off" aria-label="Search wiki">
+      </div>
+      <div id="searchResults" class="search-results" hidden></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sidebar-nav" aria-label="Wiki navigation">
+      <!-- Home link -->
+      <a href="{{ "/" | absURL }}" class="nav-home-link {{ if .IsHome }}active{{ end }}">
+        <i class="fa-solid fa-house nav-icon"></i>
+        <span>Home</span>
+      </a>
+
+      {{ $currentURL := .RelPermalink }}
+      {{ $topMenus := where .Site.Menus.sidebar "Parent" "" }}
+
+      {{ range $topMenus }}
+        {{ if .Params.isGroup }}
+          {{/* Group header with collapsible children */}}
+          {{ $groupID := .Identifier }}
+          {{ $children := where $.Site.Menus.sidebar "Parent" $groupID }}
+          {{ $hasActive := false }}
+          {{ range $children }}
+            {{ if hasPrefix $currentURL .URL }}{{ $hasActive = true }}{{ end }}
+          {{ end }}
+          <div class="nav-group {{ if $hasActive }}open{{ end }}" data-group="{{ $groupID }}">
+            <button class="nav-group-header" aria-expanded="{{ if $hasActive }}true{{ else }}false{{ end }}">
+              <span class="nav-group-label">{{ .Name }}</span>
+              <i class="fa-solid fa-chevron-right nav-group-chevron"></i>
+            </button>
+            <ul class="nav-group-items">
+              {{ range $children }}
+              <li class="nav-item {{ if hasPrefix $currentURL .URL }}active{{ end }}">
+                <a href="{{ .URL }}" class="nav-link">
+                  {{ with .Params.icon }}<i class="fa-solid fa-{{ . }} nav-icon"></i>{{ end }}
+                  <span>{{ .Name }}</span>
+                  {{ $section := $.Site.GetPage .URL }}
+                  {{ with $section }}
+                    {{ $count := len .RegularPages }}
+                    {{ if gt $count 0 }}
+                    <span class="nav-count">{{ $count }}</span>
+                    {{ end }}
+                  {{ end }}
+                </a>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+        {{ else }}
+          {{/* Standalone items (Graph View, States) */}}
+          <div class="nav-standalone">
+            <a href="{{ .URL }}" class="nav-link {{ if hasPrefix $currentURL .URL }}active{{ end }}">
+              {{ with .Params.icon }}<i class="fa-solid fa-{{ . }} nav-icon"></i>{{ end }}
+              <span>{{ .Name }}</span>
+            </a>
+          </div>
+        {{ end }}
+      {{ end }}
+    </nav>
+
+    <!-- Recent pages -->
+    <div class="sidebar-section">
+      <h4 class="sidebar-section-title">Recent</h4>
+      <ul class="recent-list">
+        {{ range first 6 .Site.RegularPages.ByLastmod.Reverse }}
+        <li><a href="{{ .RelPermalink }}" class="recent-link" title="{{ .Title }}">{{ .Title | truncate 28 }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+
+    <div class="sidebar-footer">
+      <span class="sidebar-version">v{{ .Site.Params.siteVersion }}</span>
+      <a href="{{ "/graph/" | absURL }}" class="graph-link" title="Graph view">
+        <i class="fa-solid fa-share-nodes"></i>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Main content area -->
+  <div class="wiki-main">
+    {{ block "main" . }}{{ end }}
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+  <script src="{{ "js/search.js" | absURL }}"></script>
+  <script src="{{ "js/wiki.js" | absURL }}"></script>
+
+  {{ block "scripts" . }}{{ end }}
+</body>
+</html>

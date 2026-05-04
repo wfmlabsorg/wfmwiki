@@ -1,0 +1,29 @@
+{{/*
+  wikilink shortcode
+  Usage: {{< wikilink "projects/blue-shield" >}}
+  Usage: {{< wikilink "projects/blue-shield" "Custom Label" >}}
+
+  Renders as a styled internal link and registers the cross-reference.
+  The cross-reference is picked up by build-graph-data.ts via frontmatter.
+*/}}
+{{ $path  := .Get 0 }}
+{{ $label := .Get 1 | default $path }}
+
+{{/* Try to find the page in site pages */}}
+{{ $target := "" }}
+{{ range $.Page.Site.RegularPages }}
+  {{ $pagePath := .RelPermalink | strings.TrimPrefix "/" | strings.TrimSuffix "/" }}
+  {{ if eq $pagePath $path }}
+    {{ $target = . }}
+  {{ end }}
+{{ end }}
+
+{{ if $target }}
+<a href="{{ $target.RelPermalink }}" class="wikilink wikilink-exists" data-wikilink="{{ $path }}">
+  <i class="fa-solid fa-link wikilink-icon"></i>{{ with $label }}{{ . }}{{ else }}{{ $target.Title }}{{ end }}
+</a>
+{{ else }}
+<a href="{{ "/" | absURL }}{{ $path }}/" class="wikilink wikilink-new" data-wikilink="{{ $path }}" title="Page not yet created">
+  <i class="fa-solid fa-link wikilink-icon"></i>{{ $label }}
+</a>
+{{ end }}
