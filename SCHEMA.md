@@ -190,10 +190,13 @@ Lint flags `stub` pages older than 30 days for review or pruning.
 
 When importing from `raw/mediawiki-export/`:
 
-- **Default frontmatter on import:** `type: stub`, `status: draft`, `aperture: contact-center`, `confidence: medium`.
+- **Default frontmatter on import:** `type: <heuristic>` (matched from title patterns; defaults to `concept` if uncertain), `status: draft`, `aperture: contact-center`, `confidence: medium`. Triage adjusts type if heuristic was wrong.
+- **Why not `type: stub`:** `stub` is a *status* (per §8), not a type. There is no "untyped" type. Using a heuristic-proposed type lets pages validate immediately; triage corrects.
+- **Heuristic mappings (illustrative, not exhaustive):** `Vs.` in title → `comparison` · `Calculator` / `Power of One` / attrition formulas → `calculator` · `WFM Labs` / ™ → `synthesis` + `ted_pov: true` · default → `concept`.
 - **Skip these namespaces:** `File:`, `Talk:`, `User:`, `User talk:`, `MediaWiki:`, `Wiki:` (admin pages, image wrappers, system messages).
-- **Map to Hugo home, not wiki:** `Main Page` → `site/content/_index.md`.
-- **Triage decisions:** keep / restructure / merge / split / prune — recorded in `_ops/migration-triage.md`.
+- **Map to Hugo home, not wiki:** `Main Page` → `site/content/_index.md`. Privacy / Terms / CoC pages also route to `site/content/`, not `wiki/`.
+- **Migration metadata:** import adds `mediawiki_original` and `mediawiki_revision_date` frontmatter fields for audit trail. These are ignored by validation (extra fields permitted).
+- **Triage decisions:** keep / restructure / merge / split / prune / meta — recorded in `_ops/migration-triage.md`.
 
 ---
 
@@ -201,7 +204,8 @@ When importing from `raw/mediawiki-export/`:
 
 Schema is versioned. Material changes (new page type, new required field, removed domain) bump the version and append a changelog entry below.
 
-**Current version:** 1.0 *(2026-05-04)*
+**Current version:** 1.0.1 *(2026-05-04)*
 
 ### Changelog
+- **1.0.1** *(2026-05-04)* — Battle-tested against MediaWiki migration of 27 content pages from wiki.wfmlabs.org. All 10 page types and 26 domain slugs covered the corpus. Clarified §10 migration defaults: import uses heuristic-proposed type (not "stub" — that's a status). Documented `mediawiki_original` / `mediawiki_revision_date` extra frontmatter fields used during migration.
 - **1.0** *(2026-05-04)* — Initial schema. 10 page types (added `calculator` based on existing wiki content patterns). 26 domain slugs. Aperture taxonomy with 4 values.
