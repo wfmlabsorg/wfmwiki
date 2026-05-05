@@ -6,6 +6,28 @@ Format: `## [YYYY-MM-DD HH:MM] {type} | {summary}` where type is one of `ingest 
 
 ---
 
+## [2026-05-05 08:54] ingest | Compass newsletter ingest: 4 new pages + 6 cross-link edits, 10 edits total. Created: AI Scaffolding Framework (rev 598, from Scaffolding Problem Jan 2026), Intelligence-Driven Recruiting (rev 599, from Front Door is Broken Feb 2026), Variance Harvesting (rev 600, from Maturity Model Revisited Jan 2026), StoicGraph (rev 601, from Stoic Graphs Nov 2025). Cross-linked: WFM Labs Maturity Model (602), ROC (603), WFM Ecosystem Architecture (604), Interpersonal Relationships (605), Intelligent Automation (606), Future WFM Operating Standard (607). Inbound backlink counts post-work: Variance Harvesting=6, AI Scaffolding=5, Intelligence-Driven Recruiting=2, StoicGraph=2 (no longer orphan).
+
+## [2026-05-05 08:53] publish | Edited "Future WFM Operating Standard" — Cross-link the new synthesis pages (AI Scaffolding Framework, Variance Harvesting, Intelligence-Driven Recruiting, StoicGraph) representing Compass newsletter articulations of the standard's pillars. (rev 607)
+
+## [2026-05-05 08:53] publish | Edited "Intelligent Automation" — Cross-link Variance Harvesting — the canonical use case the automation runs in production. (rev 606)
+
+## [2026-05-05 08:53] publish | Edited "Interpersonal Relationships" — Cross-link StoicGraph — the relationship strategy framework that operationalizes the interpersonal pillar. (rev 605)
+
+## [2026-05-05 08:53] publish | Edited "WFM Ecosystem Architecture" — Cross-link AI Scaffolding Framework (parallel infrastructure framework) and Variance Harvesting (operational practice in the ecosystem). (rev 604)
+
+## [2026-05-05 08:53] publish | Edited "Resource Optimization Center (ROC)" — Cross-link Variance Harvesting — the operational principle the ROC runs in production. (rev 603)
+
+## [2026-05-05 08:53] publish | Edited "WFM Labs Maturity Model™" — Cross-link new wiki pages: Variance Harvesting (Level 3 operating principle) and AI Scaffolding Framework (gating capability for L3+). (rev 602)
+
+## [2026-05-05 08:51] publish | Edited "StoicGraph" — Create synthesis page for the relationship strategy framework from Lango Compass article (Nov 2025): Stoic Graphs, Noisy Feeds, and the Future of Work. Sections: Two Operating Modes (Broadcast vs Stoic), Three Application Areas (Sales/Operations/Career), Practical Frameworks (Five-Person Rule, Conference Rule of Three, Graph Review, Design for Distributions), Engagement Reality, Connection to Adaptive Workforce Thinking. (rev 601)
+
+## [2026-05-05 08:51] publish | Edited "Variance Harvesting" — Create concept page for the central operating principle of Maturity Model Level 3 (Progressive — Breaking the Monolith). From Lango Compass article (Jan 2026): The WFM Maturity Model Revisited. Sections: The Inversion (variance as fuel not problem), Practical Applications, New Metrics (SLS, AAR, VCE), Required Capabilities, ROC connection, Precision Theater, Maturity Model position. (rev 600)
+
+## [2026-05-05 08:51] publish | Edited "Intelligence-Driven Recruiting" — Create synthesis page from Lango Compass article (Feb 2026): The Front Door is Broken. Methodology page on outbound talent discovery via structured professional APIs, OSINT-style sourcing, and the three-stage evolution from PDF resumes to portfolios to APIs. References TalentIntel reference implementation at talentintel.wfmlabs.com. (rev 599)
+
+## [2026-05-05 08:51] publish | Edited "AI Scaffolding Framework" — Create synthesis page for the 7-layer AI infrastructure framework from Lango Compass article (Jan 2026): The Scaffolding Problem. Sections: Thinking vs Optimization, Deterministic vs Probabilistic, the Seven Layers (Data Fabric / Business Rules / Analytical / Context / Workflow / Human-AI Interface / AI Models), Historical Context, Maturity Model implications. Cites Adaptive book and Miessler iceberg metaphor. (rev 598)
+
 ## [2026-05-05 08:29] publish | QA pass on new pages (4 corrections): RealNumbers URL realnumbersandstrategies.com→realnumbers.com (Strategies is the product); FREESTYLE Telecom URL dropped (no verified domain found); Maturity Model level names corrected (fabricated Connected/Adaptive/Autonomous → real Progressive/Advanced/Pioneering with qualifier descriptions); Intradiem founding-year claim softened (removed unverified since 2009). Wikilinks audited: 4 content links resolve, only known wanted page is Workforce Management Software (WFM or WFO) which my new pages contributed to (now top wanted at 3 refs).
 
 ## [2026-05-05 08:29] publish | Edited "Intelligent Automation" — QA fix: align Maturity Model context with actual WFM Labs Maturity Model™ level names — added Progressive (Breaking the Monolith) and Advanced (The Ecosystem Emerges) qualifiers. Removed unverified Intradiem founding-year claim (since 2009 → established player). (rev 597)
