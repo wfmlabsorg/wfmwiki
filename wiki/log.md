@@ -6,6 +6,16 @@ Format: `## [YYYY-MM-DD HH:MM] {type} | {summary}` where type is one of `ingest 
 
 ---
 
+## [2026-05-05 08:29] publish | QA pass on new pages (4 corrections): RealNumbers URL realnumbersandstrategies.com→realnumbers.com (Strategies is the product); FREESTYLE Telecom URL dropped (no verified domain found); Maturity Model level names corrected (fabricated Connected/Adaptive/Autonomous → real Progressive/Advanced/Pioneering with qualifier descriptions); Intradiem founding-year claim softened (removed unverified since 2009). Wikilinks audited: 4 content links resolve, only known wanted page is Workforce Management Software (WFM or WFO) which my new pages contributed to (now top wanted at 3 refs).
+
+## [2026-05-05 08:29] publish | Edited "Intelligent Automation" — QA fix: align Maturity Model context with actual WFM Labs Maturity Model™ level names — added Progressive (Breaking the Monolith) and Advanced (The Ecosystem Emerges) qualifiers. Removed unverified Intradiem founding-year claim (since 2009 → established player). (rev 597)
+
+## [2026-05-05 08:29] publish | Edited "WFM Ecosystem Architecture" — QA fix: Maturity Model alignment — replaced fabricated level names (Connected/Adaptive/Autonomous) with actual model names from WFM Labs Maturity Model™ (Progressive/Advanced/Pioneering) and added the qualifier descriptions (Breaking the Monolith / Ecosystem Emerges / Enterprise-Wide Intelligence). Added Level 4 reference link to level4.wfmlabs.com. (rev 596)
+
+## [2026-05-05 08:26] publish | Edited "Technology" — QA fix: RealNumbers vendor URL — was realnumbersandstrategies.com (DEAD); correct domain is realnumbers.com. Strategies is the product, not the company name. (rev 595)
+
+## [2026-05-05 08:26] publish | Edited "WFM Ecosystem Architecture" — QA fix: RealNumbers URL (was realnumbersandstrategies.com — DEAD; correct domain is realnumbers.com, Strategies is the product name). Drop FREESTYLE Telecom URL (no verified domain found; keeping company name as bold text). (rev 594)
+
 ## [2026-05-05 08:10] publish | Edited "Technology" — Append new section: The Modern Ecosystem Approach. Bridges existing Technology coverage to the new WFM Ecosystem Architecture synthesis page. Cites Lango LinkedIn article (Aug 2025). No existing prose modified — append-only. (rev 593)
 
 ## [2026-05-05 08:10] publish | Edited "WFM Ecosystem Architecture" — Create synthesis page for the 4-pillar WFM ecosystem framework. Anchored to Lango LinkedIn article (Aug 2025): The Critical WFM Choice. Sections: Evolution Gap, Two Fatal Flaws (Static Scheduling, Deterministic Planning), Four-Pillar Architecture (Core/Automation/Capacity Planning/Analytics), Three Operational Concepts (Variance as Opportunity, Living Models, Risk-Aware Planning), AI Practical Role, Flexible Workforce Models, Strategic Choice, Maturity Model Alignment. (rev 592)
