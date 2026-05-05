@@ -6,6 +6,10 @@ Format: `## [YYYY-MM-DD HH:MM] {type} | {summary}` where type is one of `ingest 
 
 ---
 
+## [2026-05-05 07:45] publish | Edited "Resource Optimization Center (ROC)" — Fix phantom red link: Next-Generation Routing (hyphen) → Next Generation Routing (no hyphen). The hyphenated form was a typo; the actual page slug uses no hyphen. (rev 589)
+
+## [2026-05-05 07:45] publish | Edited "Discrete-Event vs. Monte Carlo Simulation Models" — Fix phantom red link: Multi-Objective Optimization in Contact Centers (plural) → Contact Center (singular). The plural form was a typo; the actual page exists at the singular slug. (rev 588)
+
 ## [2026-05-05 07:38] init | Phase 7 complete: 5 MediaWiki workflows + 4 new tools shipped. wfmwiki-mw-audit.ts (lonely/wanted/redirects/dead-ends/stale-stubs), wfmwiki-mw-coverage.ts (red-link inbound count + topic gaps), wfmwiki-mw-edit.ts (diff-approval edit with bot=1 default, 2s rate limit, audit-report tag in summary), wfmwiki-mw-report.ts (composes audit+coverage into weekly). Workflows: Audit, Coverage, Ingest, Update, Report. Verified end-to-end on live wiki: 7 lonely pages, 11 wanted pages (5 content gaps + 6 templates), edit dry-run on Token Test produced clean diff.
 
 ## [2026-05-04 15:00] init | Cleanup: deleted CF Pages project, removed wiki.wfmlabs.com CNAME from Netlify, archived Hugo site/ + 5 migration tools + 9 markdown-pipeline workflows, dropped 28 duplicate wiki/{section}/ files (now in MediaWiki only), updated SKILL.md + MISSION.md to reflect MediaWiki-as-source-of-truth, built MW API client + overview tool, verified bot auth (User:Tlango@TARS — bureaucrat+sysop, 578 edits).
