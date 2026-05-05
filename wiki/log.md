@@ -6,6 +6,22 @@ Format: `## [YYYY-MM-DD HH:MM] {type} | {summary}` where type is one of `ingest 
 
 ---
 
+## [2026-05-05 10:55] ingest | Forecasting cluster batch 1 (Hyndman OTexts source): 4 new pages — Forecasting Methods overview (rev 619), Naive and Seasonal Naive Forecasting (rev 620), Exponential Smoothing (rev 621), ARIMA Models (rev 622). Plus 3 calculator cross-link edits — Demand calculation (rev 623), Annual Attrition (rev 624), Training Attrition (rev 625). Practitioner-discipline framing: equations included for junior-to-senior WFM forecasting practitioner audience; Hyndman cited inline; WFM-specific use cases and pitfalls in each method page; benchmark-vs-naive imperative made explicit. Math rendering confirmed via mwe-math MediaWiki extension. All 30 wikilinks across new pages resolve. Inbound backlinks healthy (Forecasting Methods: 6, others: 4 each).
+
+## [2026-05-05 10:54] publish | Edited "Training Attrition" — Cross-link Forecasting Methods — methods for cohort-level training attrition rate forecasting. (rev 625)
+
+## [2026-05-05 10:54] publish | Edited "Annual Attrition" — Cross-link Forecasting Methods — methods for forecasting attrition rates as time-series inputs. (rev 624)
+
+## [2026-05-05 10:54] publish | Edited "Demand calculation" — Cross-link Forecasting Methods + Naive + ETS + ARIMA — calculator consumes a forecast produced by these methods. (rev 623)
+
+## [2026-05-05 10:53] publish | Edited "ARIMA Models" — Create method page on ARIMA — AR(p), MA(q), I(d), full ARIMA(p,d,q), SARIMA, ARIMAX. Equations and parameter intuition for each component. When ARIMA beats ETS in WFM (residual autocorrelation, irregular seasonality, hybrid with regression). Common pitfalls (insufficient data, black-box trust, over-differencing, outliers). Diagnostic checks after fitting. Cites Hyndman + Box-Jenkins canonical reference. (rev 622)
+
+## [2026-05-05 10:53] publish | Edited "Exponential Smoothing" — Create method page on the ETS family — most-used WFM forecasting framework beyond Erlang. Simple ES, Holts linear (with damping), Holt-Winters seasonal (additive/multiplicative) — equations and parameter intuition. ETS state space form (E,T,S notation). Common WFM pitfalls (single-period seasonality, outlier sensitivity, missing damping, multiplicative on near-zero). Connection to WFM software defaults. (rev 621)
+
+## [2026-05-05 10:53] publish | Edited "Naive and Seasonal Naive Forecasting" — Create method page on naive baselines. Mean / naive / seasonal naive / drift methods with equations. Hyndman benchmark imperative explicit (every method must beat seasonal naive). When-to-use-in-production section for short history, intermittent demand, step changes, high-frequency intraday. Common WFM pitfalls (wrong seasonal period, multiple seasonal periods, treating naive as inadequate without testing). MASE benchmarking guidance. (rev 620)
+
+## [2026-05-05 10:53] publish | Edited "Forecasting Methods" — Create master overview for forecasting methods cluster. Decision tree by series characteristics, family-at-a-glance table, benchmark imperative, accuracy metrics, time series concepts, WFM-specific use cases, connections to Future WFM Operating Standard and Ecosystem Architecture. Cited Hyndman OTexts (Python edition). Practitioner-oriented framing throughout — junior to senior WFM forecasting practitioner audience. (rev 619)
+
 ## [2026-05-05 09:23] ingest | Batch 2 (agent ad6ee5eeed3588021): 4 new pages closing actual coverage gaps — Workforce Management Software (WFM or WFO) rev 614, Simulation Software rev 615, Contact Center as a Service (CCaaS) rev 616, Daily ROC Routine rev 617. Plus ROC See Also update rev 618. Agent applied better discipline than initially scoped: instead of newsletter republication, used the wiki coverage audit as the gap-source. Coverage delta: 7 → 3 content gaps, priority 2 → 0 (all multi-reference gaps closed). Articles: 24 → 27. All pages structurally practitioner-oriented (What X does / Vendor Landscape / WFM Implications / Maturity Model alignment / See Also). Daily ROC Routine in particular is a procedural manual at 1700 words across 28 sections.
 
 ## [2026-05-05 09:21] publish | Edited "Resource Optimization Center (ROC)" — Add See Also link to new Daily ROC Routine page (procedural companion to ROC concept) (rev 618)
