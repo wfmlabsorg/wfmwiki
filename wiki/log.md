@@ -6,6 +6,18 @@ Format: `## [YYYY-MM-DD HH:MM] {type} | {summary}` where type is one of `ingest 
 
 ---
 
+## [2026-05-05 09:23] ingest | Batch 2 (agent ad6ee5eeed3588021): 4 new pages closing actual coverage gaps — Workforce Management Software (WFM or WFO) rev 614, Simulation Software rev 615, Contact Center as a Service (CCaaS) rev 616, Daily ROC Routine rev 617. Plus ROC See Also update rev 618. Agent applied better discipline than initially scoped: instead of newsletter republication, used the wiki coverage audit as the gap-source. Coverage delta: 7 → 3 content gaps, priority 2 → 0 (all multi-reference gaps closed). Articles: 24 → 27. All pages structurally practitioner-oriented (What X does / Vendor Landscape / WFM Implications / Maturity Model alignment / See Also). Daily ROC Routine in particular is a procedural manual at 1700 words across 28 sections.
+
+## [2026-05-05 09:21] publish | Edited "Resource Optimization Center (ROC)" — Add See Also link to new Daily ROC Routine page (procedural companion to ROC concept) (rev 618)
+
+## [2026-05-05 09:20] publish | Edited "Daily ROC Routine" — Create page — fill wanted-page gap (referenced from Event Management); procedural backbone of ROC operations covering pre-shift, shift open, active monitoring, shift close, post-shift cycles plus severity framework and Maturity Model alignment (rev 617)
+
+## [2026-05-05 09:20] publish | Edited "Contact Center as a Service (CCaaS)" — Create page — fill wanted-page gap (referenced from Next Generation Routing); practitioner reference on CCaaS category, vendor landscape, premise-vs-cloud implications, WFM-team integration considerations (rev 616)
+
+## [2026-05-05 09:20] publish | Edited "Simulation Software" — Create page — fill wanted-page gap (2 inbound refs from Next Generation Routing, Resource Optimization Center); practitioner reference on simulation tools (DES, Monte Carlo, programmable notebooks) and their fit to capacity-planning vs intraday questions (rev 615)
+
+## [2026-05-05 09:20] publish | Edited "Workforce Management Software (WFM or WFO)" — Create page — fill highest-priority wanted-page gap (3 inbound refs from Technology, Next Generation Routing, Intelligent Automation); practitioner-facing reference on WFM software class, vendors, evaluation criteria, and Maturity Model alignment (rev 614)
+
 ## [2026-05-05 09:19] publish | Practitioner-discipline cleanup: deleted StoicGraph (failed mission alignment); removed StoicGraph cross-links from Interpersonal Relationships (rev 608) and Future WFM Operating Standard (rev 609); polished Variance Harvesting with Implementation Sequence section (rev 610); rewrote AI Scaffolding Framework (rev 611) with What-practitioners-build / Maturity-tells / Common-failure-modes per layer + Self-Assessment section; rewrote Intelligence-Driven Recruiting (rev 612) as WFM-organization practice page (Why this matters for WFM, The Practitioner Shift table, What WFM Builds, Implementation Sequence); rewrote WFM Ecosystem Architecture (rev 613) compressing argumentative sections, expanding pillars with practitioner detail. Updated Workflows/Ingest.md with the Four Tests discipline (coverage / mission / practitioner / practice tests) to prevent future newsletter-republish drift.
 
 ## [2026-05-05 09:18] publish | Edited "WFM Ecosystem Architecture" — Practitioner-discipline rewrite. Compressed Evolution Gap and Strategic Choice (argumentative). Each of the 4 pillars now includes What practitioners build / Maturity tells (Foundational/Progressive/Advanced) / Common failure modes. Two Fatal Flaws kept as diagnostic intro. Three Operational Concepts simplified. Page now answers what a WFM org does to build the ecosystem, not just describes the framework. (rev 613)
