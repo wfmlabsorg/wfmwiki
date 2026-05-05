@@ -6,6 +6,20 @@ Format: `## [YYYY-MM-DD HH:MM] {type} | {summary}` where type is one of `ingest 
 
 ---
 
+## [2026-05-05 11:28] publish | Dead-link fixes (agent-surfaced + Ted-verified): 6 pages, 14 URL substitutions. Dynamic Calculators rev 632 (4 subs: 3 Shiny + 1 wfmlabs.org/calculators → powerofone.wfmlabs.com/), Next Generation Routing rev 633 (3 subs: kyodo.solutions paths → kyodosolutions.com/, modelcontextprotocol www→bare), Multi-Objective Optimization in Contact Center rev 634 (2 subs), Discrete-Event vs Monte Carlo rev 635 (1 sub), WFM Assessment rev 636 (wfmlabs.org/assessment → maturity-assessment.wfmlabs.com/), WFM Processes rev 637 (Shiny → powerofone.wfmlabs.com/). Ted challenged the kyodosolutions.com push correctly — I had not independently verified before pushing. Re-probed: kyodosolutions.com is HTTP 200 + confirmed Ted's company via WebFetch. Process gap encoded for future work: when agent recommends URL replacement, do own HTTP probe + content verify before push. Event Management http://csc prose item deferred (Ted not yet weighed in).
+
+## [2026-05-05 11:19] publish | Edited "WFM Processes" — Dead-link audit 2026-05-05 fix — see _ops/audit-reports/2026-05-05-deadlinks.md for the audit. URL substitutions only; surrounding prose unchanged. (rev 637)
+
+## [2026-05-05 11:19] publish | Edited "WFM Assessment" — Dead-link audit 2026-05-05 fix — see _ops/audit-reports/2026-05-05-deadlinks.md for the audit. URL substitutions only; surrounding prose unchanged. (rev 636)
+
+## [2026-05-05 11:19] publish | Edited "Discrete-Event vs. Monte Carlo Simulation Models" — Dead-link audit 2026-05-05 fix — see _ops/audit-reports/2026-05-05-deadlinks.md for the audit. URL substitutions only; surrounding prose unchanged. (rev 635)
+
+## [2026-05-05 11:19] publish | Edited "Multi-Objective Optimization in Contact Center" — Dead-link audit 2026-05-05 fix — see _ops/audit-reports/2026-05-05-deadlinks.md for the audit. URL substitutions only; surrounding prose unchanged. (rev 634)
+
+## [2026-05-05 11:19] publish | Edited "Next Generation Routing" — Dead-link audit 2026-05-05 fix — see _ops/audit-reports/2026-05-05-deadlinks.md for the audit. URL substitutions only; surrounding prose unchanged. (rev 633)
+
+## [2026-05-05 11:19] publish | Edited "Dynamic Calculators" — Dead-link audit 2026-05-05 fix — see _ops/audit-reports/2026-05-05-deadlinks.md for the audit. URL substitutions only; surrounding prose unchanged. (rev 632)
+
 ## [2026-05-05 11:14] ingest | Forecasting cluster batch 2: 4 new pages — Forecast Accuracy Metrics (rev 627), Regression for Forecasting (rev 628), Time Series Decomposition (rev 629), Hierarchical Forecasting (rev 630). Plus Forecasting Methods overview wired to link them all (rev 631 — replaced 3 planned cells with actual links + added all 4 to See Also). All 28 wikilinks across batch 2 pages resolve. Hyndman OTexts cited inline; Hyndman & Koehler 2006 (MASE), Cleveland 1990 (STL), Wickramasuriya Athanasopoulos Hyndman 2019 (MinT) cited where appropriate.
 
 ## [2026-05-05 11:13] publish | Edited "Forecasting Methods" — Wire batch 2 forecasting pages into the overview. Replace 3 planned cells in family-at-a-glance table with actual links (Regression for Forecasting, Time Series Decomposition, Hierarchical Forecasting). Replace future-page mention with link to Forecast Accuracy Metrics. Add all 4 new pages to See Also. (rev 631)
