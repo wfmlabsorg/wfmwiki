@@ -6,6 +6,14 @@ Format: `## [YYYY-MM-DD HH:MM] {type} | {summary}` where type is one of `ingest 
 
 ---
 
+## [2026-05-05 08:10] publish | Edited "Technology" — Append new section: The Modern Ecosystem Approach. Bridges existing Technology coverage to the new WFM Ecosystem Architecture synthesis page. Cites Lango LinkedIn article (Aug 2025). No existing prose modified — append-only. (rev 593)
+
+## [2026-05-05 08:10] publish | Edited "WFM Ecosystem Architecture" — Create synthesis page for the 4-pillar WFM ecosystem framework. Anchored to Lango LinkedIn article (Aug 2025): The Critical WFM Choice. Sections: Evolution Gap, Two Fatal Flaws (Static Scheduling, Deterministic Planning), Four-Pillar Architecture (Core/Automation/Capacity Planning/Analytics), Three Operational Concepts (Variance as Opportunity, Living Models, Risk-Aware Planning), AI Practical Role, Flexible Workforce Models, Strategic Choice, Maturity Model Alignment. (rev 592)
+
+## [2026-05-05 08:10] publish | Edited "Intelligent Automation" — Create concept page filling the highest-priority red link (3 backlinks). Synthesized from Future WFM Operating Standard framework and Lango LinkedIn article on WFM Ecosystem Architecture (Aug 2025). Sections: What It Is, RPA vs IA, WFM Use Cases, Industrial-Strength Automation Pillar, Vendor Landscape, Maturity Model Context. (rev 591)
+
+## [2026-05-05 08:10] publish | Edited "Automation Software: Robotic Process Automation and Intelligent Automation and (RPA and IA)" — Create redirect to Intelligent Automation. The original placeholder title was awkward; existing page references already display Intelligent Automation as the link text. Redirecting resolves the 3 backlinks without rewriting source pages. (rev 590)
+
 ## [2026-05-05 07:45] publish | Edited "Resource Optimization Center (ROC)" — Fix phantom red link: Next-Generation Routing (hyphen) → Next Generation Routing (no hyphen). The hyphenated form was a typo; the actual page slug uses no hyphen. (rev 589)
 
 ## [2026-05-05 07:45] publish | Edited "Discrete-Event vs. Monte Carlo Simulation Models" — Fix phantom red link: Multi-Objective Optimization in Contact Centers (plural) → Contact Center (singular). The plural form was a typo; the actual page exists at the singular slug. (rev 588)
