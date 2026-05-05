@@ -6,6 +6,8 @@ Format: `## [YYYY-MM-DD HH:MM] {type} | {summary}` where type is one of `ingest 
 
 ---
 
+## [2026-05-05 11:06] publish | Edited "Power of One" — Replace decommissioned Shiny/RStudio links (3 dead apps: Small Queues, Long Queues, Japanese) with consolidated successor at powerofone.wfmlabs.com. Heading promoted from h1 to h2. Image caption updated (no longer linked to dead URL). Per Ted: the 3 old Shiny apps have been replaced with one app at powerofone.wfmlabs.com. (rev 626)
+
 ## [2026-05-05 10:55] ingest | Forecasting cluster batch 1 (Hyndman OTexts source): 4 new pages — Forecasting Methods overview (rev 619), Naive and Seasonal Naive Forecasting (rev 620), Exponential Smoothing (rev 621), ARIMA Models (rev 622). Plus 3 calculator cross-link edits — Demand calculation (rev 623), Annual Attrition (rev 624), Training Attrition (rev 625). Practitioner-discipline framing: equations included for junior-to-senior WFM forecasting practitioner audience; Hyndman cited inline; WFM-specific use cases and pitfalls in each method page; benchmark-vs-naive imperative made explicit. Math rendering confirmed via mwe-math MediaWiki extension. All 30 wikilinks across new pages resolve. Inbound backlinks healthy (Forecasting Methods: 6, others: 4 each).
 
 ## [2026-05-05 10:54] publish | Edited "Training Attrition" — Cross-link Forecasting Methods — methods for cohort-level training attrition rate forecasting. (rev 625)
